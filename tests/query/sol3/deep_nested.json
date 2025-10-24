@@ -1,0 +1,137 @@
+{
+  "valid_region": {
+    "p_min": { "x": -1000000000000, "y": -1000000000000 },
+    "p_max": { "x":  1000000000000, "y":  1000000000000 }
+  },
+  "query": {
+    "operator_and": [
+      {
+        "operator_or": [
+          {
+            "operator_and": [
+              {
+                "operator_crop": {
+                  "region": { "p_min": { "x": -5000, "y": -5000 }, "p_max": { "x": 5000, "y": 5000 } },
+                  "category": 1
+                }
+              },
+              {
+                "operator_or": [
+                  {
+                    "operator_crop": {
+                      "region": { "p_min": { "x": -3000, "y": -3000 }, "p_max": { "x": 3000, "y": 3000 } },
+                      "one_of_groups": [0, 2, 4, 6, 8]
+                    }
+                  },
+                  {
+                    "operator_and": [
+                      {
+                        "operator_crop": {
+                          "region": { "p_min": { "x": -2000, "y": -2000 }, "p_max": { "x": 2000, "y": 2000 } },
+                          "proper": true
+                        }
+                      },
+                      {
+                        "operator_or": [
+                          {
+                            "operator_crop": {
+                              "region": { "p_min": { "x": -1500, "y": -1500 }, "p_max": { "x": 1500, "y": 1500 } },
+                              "category": 2
+                            }
+                          },
+                          {
+                            "operator_crop": {
+                              "region": { "p_min": { "x": -1000000000000, "y": -1000000000000 }, "p_max": { "x": 1000000000000, "y": 1000000000000 } }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "operator_and": [
+              {
+                "operator_crop": {
+                  "region": { "p_min": { "x": 1000, "y": -1500 }, "p_max": { "x": 6000, "y": 2000 } },
+                  "category": 0
+                }
+              },
+              {
+                "operator_or": [
+                  {
+                    "operator_crop": {
+                      "region": { "p_min": { "x": 1400, "y": -1600 }, "p_max": { "x": 6200, "y": 1600 } },
+                      "proper": true
+                    }
+                  },
+                  {
+                    "operator_and": [
+                      {
+                        "operator_crop": {
+                          "region": { "p_min": { "x": 2000, "y": -1000 }, "p_max": { "x": 5000, "y": 1500 } }
+                        }
+                      },
+                      {
+                        "operator_or": [
+                          {
+                            "operator_crop": {
+                              "region": { "p_min": { "x": -1000000000000, "y": -1000000000000 }, "p_max": { "x": 1000000000000, "y": 1000000000000 } }
+                            }
+                          },
+                          {
+                            "operator_crop": {
+                              "region": { "p_min": { "x": 300, "y": -500 }, "p_max": { "x": 3500, "y": 800 } }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "operator_or": [
+          {
+            "operator_crop": {
+              "region": { "p_min": { "x": -1000000000000, "y": -1000000000000 }, "p_max": { "x": 1000000000000, "y": 1000000000000 } }
+            }
+          },
+          {
+            "operator_and": [
+              {
+                "operator_crop": {
+                  "region": { "p_min": { "x": -3500, "y": -3500 }, "p_max": { "x": -500, "y": -500 } },
+                  "category": 1
+                }
+              },
+              {
+                "operator_or": [
+                  {
+                    "operator_crop": {
+                      "region": { "p_min": { "x": -3000, "y": -3000 }, "p_max": { "x": 0, "y": 0 } },
+                      "one_of_groups": [1, 3, 5, 7, 9]
+                    }
+                  },
+                  {
+                    "operator_crop": {
+                      "region": { "p_min": { "x": -2800, "y": -2800 }, "p_max": { "x": -100, "y": -100 } },
+                      "proper": true
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

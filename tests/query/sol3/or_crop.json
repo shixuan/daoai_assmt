@@ -1,0 +1,19 @@
+{
+  "valid_region": { "p_min": { "x": -1000000, "y": -1000000 }, "p_max": { "x": 1000000, "y": 1000000 } },
+  "query": {
+    "operator_or": [
+      { "operator_crop": { "region": { "p_min": { "x": -4000, "y": -4000 }, "p_max": { "x": 4000, "y": 4000 } }, "category": 0 } },
+      {
+        "operator_or": [
+          { "operator_crop": { "region": { "p_min": { "x": 1000, "y": -500 }, "p_max": { "x": 5000, "y": 2000 } } } },
+          {
+            "operator_or": [
+              { "operator_crop": { "region": { "p_min": { "x": -3000, "y": -3000 }, "p_max": { "x": 0, "y": 3000 } }, "one_of_groups": [1, 2, 3] } },
+              { "operator_crop": { "region": { "p_min": { "x": -500, "y": -500 }, "p_max": { "x": 500, "y": 500 } } } }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
